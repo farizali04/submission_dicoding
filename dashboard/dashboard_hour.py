@@ -25,6 +25,7 @@ df = load_data()
 
 # ========== 1. PERTANYAAN 1: POLA JAM SIBUK (MUSIM PANAS 2012) ==========
 st.header("📌 1. Pola Penyewaan per Jam di Musim Panas 2012")
+st.subheader(" Bagaimana pola jumlah penyewaan sepeda (cnt) berdasarkan jam (hr) pada hari kerja vs akhir pekan di musim panas tahun 2012, sehingga manajemen dapat mengatur penambahan staf dan sepeda pada jam puncak?")
 
 # Filter data musim panas 2012
 df_summer = df[(df['yr'] == 1) & (df['season'] == 3)].copy()
@@ -59,6 +60,7 @@ st.markdown("---")
 
 # ========== 2. PERTANYAAN 2: DAMPAK CUACA BURUK ==========
 st.header("📌 2. Dampak Cuaca Buruk pada *Casual* vs *Registered* (2012)")
+st.subheader("Apakah pengaruh cuaca buruk terhadap jumlah pengguna casual dan registered berbeda secara signifikan pada jam sibuk pagi (6-9) dan sore (17-19) di tahun 2012?")
 
 # Filter data 2012 dan jam sibuk
 df_2012 = df[df['yr'] == 1].copy()

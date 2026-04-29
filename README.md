@@ -40,14 +40,16 @@ python -m venv venv
 python3 -m venv venv
 source venv/bin/activate
 
+```
+### 3. **Install dependencies**
+```bash
 # Install dependencies
 pip install -r requirements.txt
 ```
 
-### Jalankan dashboard_hour.py
+### 4. **Jalankan Streamlit**
 
 ```bash
-
 # Masuk ke Direktori dashboard
 cd dashboard
 
