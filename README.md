@@ -1,8 +1,8 @@
 # Link Streamlit : https://cdc30-penyewaan-sepeda-drsesmyhbzxwvtbncz2qeh.streamlit.app/
 
-## 🚲 Proyek Analisis Data Bike Sharing - Dataset Hourly
+## Proyek Analisis Data Bike Sharing - Dataset Hourly
 
-## 📌 Ringkasan Proyek
+## Ringkasan Proyek
 
 Proyek ini bertujuan untuk menganalisis data penyewaan sepeda per jam (`hour.csv`) guna menjawab **dua pertanyaan bisnis SMART** serta memberikan rekomendasi aksi yang dapat diimplementasikan.  
 
@@ -17,16 +17,20 @@ Analisis mencakup:
 ## 🎯 Pertanyaan Bisnis SMART
 
 ### Pertanyaan 1 (Pola Jam Sibuk)
-> **"Bagaimana pola jumlah penyewaan sepeda (`cnt`) berdasarkan jam (`hr`) pada hari kerja vs akhir pekan di musim panas tahun 2012?"**
+> **"Bagaimana pola jumlah penyewaan sepeda (cnt) berdasarkan jam (hr) pada hari kerja vs akhir pekan di musim panas tahun 2012, sehingga manajemen dapat mengatur penambahan staf dan sepeda pada jam puncak?"**
 
 ### Pertanyaan 2 (Pengaruh Cuaca Buruk)
-> **"Apakah pengaruh cuaca buruk terhadap jumlah pengguna `casual` dan `registered` berbeda pada jam sibuk pagi (6-9) dan sore (17-19) di tahun 2012?"**
+> **"Apakah pengaruh cuaca buruk terhadap jumlah pengguna casual dan registered berbeda secara signifikan pada jam sibuk pagi (6-9) dan sore (17-19) di tahun 2012?"**
 
 ---
 
 ## ⚙️ Setup Environment
 
 ### 1. **Clone atau Download Proyek**
+```bash
+# Clone repository github
+git clone https://github.com/farizali04/submission_dicoding.git 
+```
 Pastikan semua file dalam struktur di atas sudah tersedia di komputer Anda.
 
 ### 2. **Buat Virtual Environment (Opsional tapi disarankan)**
