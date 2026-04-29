@@ -34,7 +34,7 @@ Pastikan semua file dalam struktur di atas sudah tersedia di komputer Anda.
 ```bash
 # Windows
 python -m venv venv
-venv\Scripts\activate
+.\venv\Scripts\Activate.ps1
 
 # macOS / Linux
 python3 -m venv venv
