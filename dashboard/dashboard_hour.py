@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 # Konfigurasi halaman
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide", page_icon="🚲")
@@ -12,7 +13,9 @@ st.markdown("Dashboard ini menampilkan visualisasi dari notebook analisis data `
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv('hour.csv')
+    # Dapatkan path absolut file CSV
+    csv_path = os.path.join(os.path.dirname(__file__), 'hour.csv')
+    df = pd.read_csv(csv_path)
     df = df.drop(columns=['instant', 'dteday', 'atemp'], errors='ignore')
     df['day_type'] = df['workingday'].map({0: 'Weekend/Holiday', 1: 'Weekday'})
     df['weather_good'] = df['weathersit'].apply(lambda x: 1 if x <= 2 else 0)
